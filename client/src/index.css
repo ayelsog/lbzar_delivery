@@ -1,22 +1,52 @@
-/* Tailwind CSS + Custom Styles */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* WhatsApp Button Animation */
-.whatsapp-button {
-  animation: pulse 2s infinite;
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 640px) {
-  .whatsapp-button {
-    width: 100%;
-    margin: 15px 0;
-  }
+/* Button styles */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Card styles */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Navigation styles */
+nav {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }

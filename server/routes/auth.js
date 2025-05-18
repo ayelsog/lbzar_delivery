@@ -45,7 +45,7 @@ router.post('/login', async (req, res) => {
     
     const isValid = await user.comparePassword(password)
     if (!isValid) {
-      return res.status(401).json({ error: 'Identifiants invalides' })
+      return res.status(401).json({ error: 'Identifiants invalides' }
     }
     
     // Generate JWT
