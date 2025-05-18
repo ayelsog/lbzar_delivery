@@ -1,3 +1,22 @@
+/* Tailwind CSS + Custom Styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* WhatsApp Button Animation */
+.whatsapp-button {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .whatsapp-button {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
